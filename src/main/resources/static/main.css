@@ -1,0 +1,8 @@
+input {
+    display: none;
+}
+
+.uploadImage {
+    width: 50px;
+    cursor: pointer;
+}
