@@ -1,0 +1,15 @@
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Hello!</title>
+</head>
+<body>
+<div>
+    <ul>
+        <li th:each="file : ${files}">
+            <img th:src="${file}">
+        </li>
+    </ul>
+</div>
+</body>
+</html>

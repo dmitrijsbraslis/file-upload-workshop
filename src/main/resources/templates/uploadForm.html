@@ -1,0 +1,19 @@
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Hello!</title>
+    <link th:href="@{/main.css}" rel="stylesheet" type="text/css">
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script th:src="@{/main.js}" defer></script>
+</head>
+<body>
+    <form method="post" enctype="multipart/form-data" action="/upload">
+<!--        <div>Select file to upload:</div>-->
+        <label for="file">
+            <img th:src="@{/upload.png}" class="uploadImage">
+        </label>
+        <input id="file" type="file" name="file">
+        <input id="upload" type="submit" value="Upload">
+    </form>
+</body>
+</html>
